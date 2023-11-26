@@ -19,9 +19,6 @@ Welcome to the Comic Creator Web Application, a user-friendly platform designed 
 - **Error Handling:** We've implemented user-friendly feedback mechanisms to guide you through any hiccups, ensuring a smooth comic creation process.
 - **Panel-by-Panel Display:** Each generated image finds its place in the respective comic panel, providing a comprehensive view of your comic strip.
 
-### 3. **Bonus Features (Optional):**
-- **Expressive Dialog:** Elevate your comic strip by adding speech bubbles or text annotations, allowing for even greater personalization.
-
 ## How to Use:
 
 1. **Input Text:** Fill in the form with your creative text for each of the 10 comic panels.
@@ -30,7 +27,7 @@ Welcome to the Comic Creator Web Application, a user-friendly platform designed 
 
 ## Deployment:
 
-Visit [Your Web App URL] to experience the Comic Creator in action. If you prefer to explore the code or deploy locally, find the project repository on [GitHub](link-to-github).
+Visit [niyandermasked.pythonanywhere.com] to experience the Comic Creator in action. If you prefer to explore the code or deploy locally, find the project repository on [GitHub](link-to-github).
 
 ## Evaluation:
 
@@ -42,7 +39,7 @@ We're excited to receive your feedback on the Comic Creator Web Application! As 
 
 - **API Connection:** Utilize the provided code segments to establish a connection with the text-to-image API.
 - **Text Input:** Populate the **`inputs`** field with your creative text for image generation.
-- **Processing Time:** Image generation typically takes around 30 seconds for each request, with an initial request potentially taking up to 10 minutes due to server warm-up.
+- **Processing Time:** Image generation typically takes around 30 seconds for each request, BUT CAN EVEN GO UPTO 10 MINUTES DEPENDING UPON THE TRAFFIC AND LOAD.
 - **Output:** The server returns a single image for each panel, each with dimensions of 512x512 pixels.
 
 Feel free to contribute to the project or share your comic strips with the community. Let the comic creation journey begin!
