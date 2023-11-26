@@ -36,7 +36,7 @@ from . import limiter
 app_routes = Blueprint('app_routes', __name__)
 
 @app_routes.route('/', methods=['GET', 'POST'])
-@limiter.limit("5 per hour")
+@limiter.limit("30 per hour")
 def index():
     if request.method == 'POST':
         image_data = []
