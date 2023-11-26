@@ -1,0 +1,49 @@
+<!-- app/templates/index.html -->
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="container-fluid px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom text-center" style="font-family: 'Comic Neue', cursive; color: #f2d349;">Create Your Comic Strip</h2>
+        
+        <div id="comicFormContainer" class="d-flex justify-content-center align-items-center">
+            <form id="comicForm" method="POST" action="/" class="row row-cols-lg-auto g-3 align-items-center">
+                {% for i in range(1, 11) %}
+                <div class="col-12">
+                    <label for="text{{ i }}" class="visually-hidden">Panel {{ i }} Text</label>
+                    <input type="text" class="form-control" id="text{{ i }}" name="text{{ i }}" placeholder="Panel {{ i }} Text" required>
+                </div>
+                {% endfor %}
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Generate Comic</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Spinner from Bootstrap that will be shown when the form is submitted -->
+        <div id="loader" class="text-center" style="display: none;">
+            <div class="spinner-grow text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="mt-2">Generating your comic, please wait...</p>
+        </div>
+    </div>
+
+    <!-- Display the images if they're available -->
+    <div class="container" id="comic-strip-container">
+        {% if image_data %}
+            <div class="row">
+                {% for image in image_data %}
+                    <div class="col-md-4 col-sm-6 d-flex justify-content-center mb-4">
+                        <img src="{{ image }}" class="comic-img img-thumbnail" alt="Comic Panel {{ loop.index }}">
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+
+    <!-- Link to Custom Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+    <!-- JavaScript to toggle the spinner and add any other interactive behaviors -->
+    <script src="{{ url_for('static', filename='index.js') }}" defer></script>
+{% endblock %}

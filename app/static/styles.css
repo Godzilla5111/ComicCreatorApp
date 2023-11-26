@@ -1,0 +1,52 @@
+/* app/static/styles.css */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Comic Neue', cursive; /* A font that gives a comic vibe */
+    background: url('https://source.unsplash.com/featured/?colorful') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+#loader {
+    display: none; /* Hide loader initially */
+}
+
+#comic-strip-container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.comic-img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.comic-img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .comic-img {
+        max-width: 100%;
+    }
+}
