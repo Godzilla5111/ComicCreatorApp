@@ -1,2 +1,2 @@
-# ComicCreatorApp-Dashtoon
+# ComicCreatorApp
 Dashtoon Product Engineer Task
