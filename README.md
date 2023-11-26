@@ -46,6 +46,8 @@ Feel free to contribute to the project or share your comic strips with the commu
 
 ![image](https://github.com/Godzilla5111/ComicCreatorApp/assets/62075225/2892d771-e950-478c-b7d9-fcf93a6acff1)
 ![image](https://github.com/Godzilla5111/ComicCreatorApp/assets/62075225/da47fc59-dddd-41ed-9b12-1c8714a502e1)
+![image](https://github.com/Godzilla5111/ComicCreatorApp/assets/62075225/1fd18ac9-4966-465b-9fdd-41fcfc3f8a97)
+
 
 
 
