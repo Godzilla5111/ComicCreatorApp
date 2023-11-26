@@ -50,3 +50,42 @@ body, html {
         max-width: 100%;
     }
 }
+
+/* Sticky footer styles */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack the content vertically */
+  padding: 1rem 0; /* Add some padding on top and bottom */
+}
+
+
+/* Ensure the content wrapper pushes the footer down but is not overlapped */
+.content-wrapper {
+  padding-bottom: 4rem; /* Adjust this value to match your footer height */
+}
+
+/* Make sure the body has a full height */
+html, body {
+  height: 100%;
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 768px) {
+  .footer {
+    padding: 1rem 0; /* Smaller padding on smaller screens */
+  }
+}
+
+/* Footer text styles */
+.footer-text {
+  text-align: center;
+  margin: 0.5rem 0; /* Add some margin between text lines */
+}
+
+
