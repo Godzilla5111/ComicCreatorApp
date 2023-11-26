@@ -22,22 +22,32 @@ document.addEventListener("DOMContentLoaded", function () {
         // Hide the loader
         document.getElementById("loader").style.display = "none";
 
-        // Clear previous images
         const comicStripContainer = document.getElementById(
           "comic-strip-container"
         );
         comicStripContainer.innerHTML = "";
 
-        // Append new images
-        data.image_data.forEach((imageSrc) => {
-          const img = new Image();
-          img.src = imageSrc;
-          img.classList.add("comic-img", "img-thumbnail");
-          comicStripContainer.appendChild(img);
-        });
+        // Check if data.image_data exists and is an array
+        if (data.image_data && Array.isArray(data.image_data)) {
+          // Append new images
+          data.image_data.forEach((imageSrc) => {
+            const img = new Image();
+            img.src = imageSrc;
+            img.classList.add("comic-img", "img-thumbnail");
+            comicStripContainer.appendChild(img);
+          });
+        } else {
+          // Handle the case where image_data is not as expected
+          console.error("Received data is not in the expected format:", data);
+          comicStripContainer.innerHTML =
+            "<p>There was an error processing your request.</p>";
+        }
       })
       .catch((error) => {
         console.error("Error:", error);
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("comic-strip-container").innerHTML =
+          "<p>There was an error processing your request.</p>";
       });
   });
 });
