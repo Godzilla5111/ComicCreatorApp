@@ -16,11 +16,10 @@ from flask import Flask
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 
+limiter = Limiter(key_func=get_remote_address)
+
 def create_app():
     app = Flask(__name__)
-
-    # Initialize Flask-Limiter with the application and key function
-    limiter = Limiter(key_func=get_remote_address)
 
     # Apply the limiter to the app
     limiter.init_app(app)
