@@ -27,7 +27,7 @@ Welcome to the Comic Creator Web Application, a user-friendly platform designed 
 
 ## Deployment:
 
-Visit [Anurag's Comic Strip Creator App](https://niyandermasked.pythonanywhere.com) to experience the Comic Creator in action. If you prefer to explore the code or deploy locally, find the project repository on [GitHub](link-to-github).
+Visit [Anurag's Comic Strip Creator App](https://niyandermasked.pythonanywhere.com) to experience the Comic Creator in action. Feel free to explore the code or deploy locally.
 
 ## Evaluation:
 
