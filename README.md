@@ -29,10 +29,6 @@ Welcome to the Comic Creator Web Application, a user-friendly platform designed 
 
 Visit [Anurag's Comic Strip Creator App](https://niyandermasked.pythonanywhere.com) to experience the Comic Creator in action. Feel free to explore the code or deploy locally.
 
-## Evaluation:
-
-We're excited to receive your feedback on the Comic Creator Web Application! As you explore, consider the functionality, user experience, and code quality. Your insights will help us continue refining and enhancing this creative platform.
-
 ## Technical Details:
 
 ### Image Generation API:
@@ -46,7 +42,8 @@ Feel free to contribute to the project or share your comic strips with the commu
 
 ![image](https://github.com/Godzilla5111/ComicCreatorApp/assets/62075225/2892d771-e950-478c-b7d9-fcf93a6acff1)
 ![image](https://github.com/Godzilla5111/ComicCreatorApp/assets/62075225/1fd18ac9-4966-465b-9fdd-41fcfc3f8a97)
-![image](https://github.com/Godzilla5111/ComicCreatorApp/assets/62075225/f715b135-15fb-451b-a29f-9a3e9bae33fb)
+![image](https://github.com/Godzilla5111/ComicCreatorApp/assets/62075225/da033027-b6f1-47ae-a250-3616c4f0c41c)
+
 
 
 
